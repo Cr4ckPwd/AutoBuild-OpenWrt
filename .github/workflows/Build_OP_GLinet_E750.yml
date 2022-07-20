@@ -87,7 +87,7 @@ jobs:
 
     - name: Configuration Customization - Build_OP_GLinet_E750
       env:
-        CONFIG_FILE: 'x86.config'
+        CONFIG_FILE: 'glinet750.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
